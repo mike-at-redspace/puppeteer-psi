@@ -13,19 +13,19 @@ This Node.js script measures key Web Vitals metrics (Cumulative Layout Shift, To
 ## Prerequisites
 
 - Node.js (version 12 or higher recommended)
-- npm (Node Package Manager)
+- npm & yarn
 
 ## Installation
 
 1. Clone this repository or download the script.
 2. Navigate to the script's directory in your terminal.
-3. Run `npm install` to install the required dependencies.
+3. Run `yarn install` to install the required dependencies.
 
 ## Usage
 
 1. Modify the `SITES` array in the script to include the websites you want to measure.
 2. Run the script using the command:
-   `node index.js`
+   `yarn benchmark`
 3. The script will output progress and results to the console and save the data to `web-vitals.csv` in the same directory.
 
 ## Configuration
@@ -37,11 +37,11 @@ This Node.js script measures key Web Vitals metrics (Cumulative Layout Shift, To
 
 The script generates a CSV file with the following columns:
 
-- Date: Timestamp of the measurement
-- Site: Name of the website
-- CLS: Cumulative Layout Shift score
-- TBT: Total Blocking Time in milliseconds
-- LCP: Largest Contentful Paint in milliseconds
+- **Date:** Timestamp of the measurement
+- **Site:** Name of the website
+- **CLS:** Cumulative Layout Shift score
+- **TBT:** Total Blocking Time in milliseconds
+- **LCP:** Largest Contentful Paint in milliseconds
 
 ## Dependencies
 
